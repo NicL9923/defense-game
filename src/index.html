@@ -1,19 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
     <title>Defense game</title>
   </head>
   <body>
-    <h1>Welcome to the Defense Game!</h1>
-    <p>👋</p>
+    <div id="game-container" style="width: 800px; height: 600px; margin: 0 auto"></div>
+    <script src="./src/renderer.js"></script>
   </body>
 </html>

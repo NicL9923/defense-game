@@ -8,11 +8,11 @@ const createWindow = () => {
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
-      preload: path.join(__dirname, 'preload.js'),
+      preload: path.join(__dirname, 'src', 'preload.js'),
     },
   });
 
-  win.loadFile('index.html');
+  win.loadFile(path.join(__dirname, 'src', 'index.html'));
 };
 
 app.whenReady().then(() => {
