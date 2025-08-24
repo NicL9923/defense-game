@@ -2,10 +2,11 @@
   "name": "defense-game",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "dist/main.js",
   "scripts": {
+    "dev": "npm run build -- --watch",
     "build": "tsc",
-    "start": "electron .",
+    "start": "npm run build && electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky"
   },
@@ -27,6 +28,7 @@
   },
   "homepage": "https://github.com/NicL9923/defense-game#readme",
   "devDependencies": {
+    "@types/node": "^24.3.0",
     "@typescript-eslint/eslint-plugin": "^8.39.1",
     "@typescript-eslint/parser": "^8.39.1",
     "electron": "^37.3.0",
